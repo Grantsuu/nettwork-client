@@ -1,24 +1,20 @@
-import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Nettwork.vb
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className="App">
+            <h1>
+                Nettwork.vb
+            </h1>
+            <h2>
+                Games
+            </h2>
+            <hr style={{width: "90%", marginBottom: "1rem"}} />
+            <div className="App-content">
+                Content
+            </div>
+        </div>
+    );
 }
 
 export default App;
