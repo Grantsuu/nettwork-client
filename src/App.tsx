@@ -1,4 +1,5 @@
 import './App.css';
+import Game from './components/Game/Game'
 
 const App = () => {
     return (
@@ -9,9 +10,9 @@ const App = () => {
             <h2>
                 Games
             </h2>
-            <hr style={{width: "90%", marginBottom: "1rem"}} />
+            <hr style={{ width: "90%", marginBottom: "1rem" }} />
             <div className="App-content">
-                Content
+                <Game />
             </div>
         </div>
     );
