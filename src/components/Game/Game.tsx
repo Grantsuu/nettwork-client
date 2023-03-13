@@ -1,20 +1,15 @@
 import { useEffect, useState } from 'react'
-import { getPing } from '../../api/api'
+import { getGames } from '../../api/api'
 
 
 const Game = () => {
 
-    const [pong, setPong] = useState("")
+    const [games, setGames] = useState("")
 
     useEffect(() => {
-        getPing()
+        getGames()
             .then(res => {
-                setPong(res.data)
-                res.data["balls"].map(
-                    (e: any) => {
-                        console.log(e)
-                    }
-                )
+                setGames(res.data)
             })
             .catch(err =>
                 console.log(err)
@@ -23,7 +18,7 @@ const Game = () => {
 
     return (
         <>
-            {JSON.stringify(pong)}
+            {JSON.stringify(games)}
         </>
     )
 }
