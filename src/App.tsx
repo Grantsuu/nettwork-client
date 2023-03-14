@@ -1,20 +1,11 @@
-import './App.css';
-import Game from './components/Game/Game'
+import Game from './views/Game/Game'
+import Container from 'react-bootstrap/Container'
 
 const App = () => {
     return (
-        <div className="App">
-            <h1>
-                Nettwork.vb
-            </h1>
-            <h2>
-                Games
-            </h2>
-            <hr style={{ width: "90%", marginBottom: "1rem" }} />
-            <div className="App-content">
-                <Game />
-            </div>
-        </div>
+        <Container fluid style={{ background: "#282c34" }}>
+            <Game />
+        </Container>
     );
 }
 
